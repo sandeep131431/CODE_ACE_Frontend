@@ -31,6 +31,9 @@ function Problem() {
           axiosClient.get('/problem/getAllProblem'),
           user ? axiosClient.get('/problem/problemSolvedByUser') : Promise.resolve({ data: [] })
         ]);
+        
+
+        console.log("i'm here", problemsRes) ;
         setProblems(problemsRes.data);
         setSolvedProblems(solvedRes.data);
       } catch (error) {

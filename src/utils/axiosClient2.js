@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const axiosClient2 =  axios.create({
-    baseURL: 'http://localhost:3001',
+    baseURL: 'https://code-ace-backend2.onrender.com',
     withCredentials: true,
     headers: {
         'Content-Type': 'application/json'
